@@ -16,7 +16,7 @@ const msg2 = document.querySelector('#msg-2')
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const location = search.value
-    const forecastUrl = "http://localhost:3000/weather?address=" + encodeURI(location)
+    const forecastUrl = "/weather?address=" + encodeURI(location)
     // console.log(forecastUrl)
     
     msg1.textContent = "Loading..."
